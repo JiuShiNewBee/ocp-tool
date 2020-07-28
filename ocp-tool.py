@@ -823,7 +823,8 @@ if __name__ == '__main__':
 
     # Truncation number of desired OpenIFS grid. Multiple possible.
     # Choose the ones you need [63, 95, 159, 255, 319, 399, 511, 799, 1279]
-    resolution_list = [159]
+    #resolution_list = [159]
+    resolution_list = [95]
 
     # Choose type of trucation. linear or cubic-octahedral
     truncation_type = 'cubic-octahedral'
@@ -831,7 +832,8 @@ if __name__ == '__main__':
     # OpenIFS experiment name. This 4 digit code is part of the name of the
     # ICMGG????INIT file you got from EMCWF
     #exp_name_oifs = 'h6mv' #default for linear
-    exp_name_oifs = 'h9wu'#default for cubic-octahedral
+    #exp_name_oifs = 'h9wu'#default for cubic-octahedral
+    exp_name_oifs = 'hagw'#default for cubic-octahedral
     # I have not yet found a way to determine automatically the number of
     # fields in the ICMGG????INIT file. Set it correctly or stuff will break!
     num_fields = 50
@@ -843,7 +845,8 @@ if __name__ == '__main__':
     # do manual basin removal, list them in manual_basin_removal below. If you
     # want to remove a basin not yet added (e.g.) for paleo simulations, add
     # the basin in section def modify_lsm and def modify_runoff_map
-    grid_name_oce = 'HR'
+    #grid_name_oce = 'HR'
+    grid_name_oce = 'CORE2'
 
     # There is automatic removal of lakes via the lake file. To remove larger
     # features, e.g. coastal seas for low res or paleo simulations list them
